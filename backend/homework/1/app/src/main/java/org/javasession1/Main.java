@@ -51,7 +51,7 @@ public class Main {
                         logger.logAddStudent(id);
                     }
                     else{
-                        System.out.println("Student with id :" + id + "already exits");
+                        System.out.println("Student with id: " + id + " already exist");
                     }
                     break;
 
@@ -61,6 +61,7 @@ public class Main {
                     retrievedStudent = school.getStudent(id);
                     if(retrievedStudent == null){
                         logger.logGetStudentByIdError(id);
+                        System.out.println("Student with id: " + id + " does not exist");
                     }
                     else {
                         logger.logGetStudentById(id);
@@ -73,6 +74,7 @@ public class Main {
                     name = scanner.nextLine();
                     retrievedStudent = school.getStudent(name);
                     if(retrievedStudent == null){
+                        System.out.println("Student with name: " + name + " does not exist");
                         logger.logGetStudentByNameError(name);
                     }
                     else {
@@ -92,6 +94,7 @@ public class Main {
                         System.out.println("Details updated successfully");
                     }
                     else{
+                        System.out.println("Student with id: " + id + " does not exist");
                         logger.logSetStudentError(id);
                     }
                     break;
@@ -108,6 +111,7 @@ public class Main {
                         System.out.println("Details updated successfully");
                     }
                     else{
+                        System.out.println("Student with id: " + id + " does not exist");
                         logger.logSetStudentError(id);
                     }
                     break;
@@ -123,6 +127,7 @@ public class Main {
                         System.out.println("Details updated successfully");
                     }
                     else{
+                        System.out.println("Student with id: " + id + " does not exist");
                         logger.logSetStudentError(id);
                     }
                     break;
