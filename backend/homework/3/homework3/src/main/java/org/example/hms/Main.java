@@ -1,7 +1,7 @@
-package HMS;
+package org.example.hms;
 
-import InsuranceComponent.*;
 import org.example.Logging;
+import org.example.insurancecomponent.*;
 
 public class Main {
     public static void main(String[] args) {

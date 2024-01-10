@@ -1,4 +1,4 @@
-package HMS;
+package org.example.hms;
 
 public class Doctor extends Staff {
     private long doctorId;

@@ -1,4 +1,4 @@
-package InsuranceComponent;
+package org.example.insurancecomponent;
 
 /**
  * use of interface (method implements in this class)

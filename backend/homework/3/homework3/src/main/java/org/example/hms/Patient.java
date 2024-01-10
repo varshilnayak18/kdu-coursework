@@ -1,4 +1,4 @@
-package HMS;
+package org.example.hms;
 
 public class Patient extends User {
     private long patientId;

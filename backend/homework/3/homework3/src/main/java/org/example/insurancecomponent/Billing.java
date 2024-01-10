@@ -1,6 +1,6 @@
-package InsuranceComponent;
+package org.example.insurancecomponent;
 
-import HMS.Patient;
+import org.example.hms.Patient;
 
 public class Billing {
 

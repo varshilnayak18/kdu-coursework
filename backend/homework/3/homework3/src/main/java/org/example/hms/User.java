@@ -1,6 +1,6 @@
-package HMS;
+package org.example.hms;
 
-import InsuranceComponent.HealthInsurancePlan;
+import org.example.insurancecomponent.HealthInsurancePlan;
 
 public class User {
     private long id;

@@ -1,13 +1,13 @@
-package InsuranceComponent;
+package org.example.insurancecomponent;
 
-public class GoldPlan extends HealthInsurancePlan {
-    public GoldPlan() {
-        setCoverage(0.8);
+public class SilverPlan extends HealthInsurancePlan {
+    public SilverPlan() {
+        setCoverage(0.7);
     }
 
     @Override
     public double computeMonthlyPremium(double salary) {
-        return 0.07 * salary;
+        return 0.06 * salary;
     }
 
     @Override
@@ -15,4 +15,3 @@ public class GoldPlan extends HealthInsurancePlan {
         return computeMonthlyPremium(salary) + getOfferedBy().computeMonthlyPremium(this,age,smoking);
     }
 }
-

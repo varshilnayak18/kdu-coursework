@@ -1,4 +1,4 @@
-package InsuranceComponent;
+package org.example.insurancecomponent;
 
 public abstract class HealthInsurancePlan {
     private double coverage;
