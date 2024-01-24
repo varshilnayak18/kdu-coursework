@@ -6,6 +6,9 @@ import com.example.springweb.entities.Tyre;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+/**
+ * DTO class for sending response object
+ */
 @Data
 @AllArgsConstructor
 public class VehicleResponseDTO {
