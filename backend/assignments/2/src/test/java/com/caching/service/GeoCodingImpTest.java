@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@ComponentScan(basePackages = "com.kdu.caching")
+@ComponentScan(basePackages = "com.example.assignment2")
 @ContextConfiguration(classes = {Assignment2Application.class})
 public class GeoCodingImpTest {
     private static Object expectedGeoCodingApiResponse;
