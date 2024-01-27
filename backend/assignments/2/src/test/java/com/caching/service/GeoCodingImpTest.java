@@ -1,7 +1,6 @@
 package com.caching.service;
 
-import com.example.assignment2.Assignment2Application;
-import com.fasterxml.jackson.databind.JsonNode;
+import com.kdu.caching.Assignment2Application;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@ComponentScan(basePackages = "com.example.assignment2")
+@ComponentScan(basePackages = "com.kdu.caching")
 @ContextConfiguration(classes = {Assignment2Application.class})
 public class GeoCodingImpTest {
     private static Object expectedGeoCodingApiResponse;
