@@ -12,10 +12,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/user")
@@ -38,7 +35,7 @@ public class UserController {
         userService.addUser(user);
         return ResponseEntity.ok("registered");
     }
-    @PostMapping("/login")
+    @GetMapping("/login")
     public ResponseEntity<String> loginUser(@RequestBody User user){
         try {
             Authentication authentication = customAuthManager.authenticate(
