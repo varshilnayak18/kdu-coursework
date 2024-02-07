@@ -1,0 +1,63 @@
+.app {
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.app .data {
+  font-size: 3rem;
+  color: grey;
+}
+.app .bold {
+  color: black;
+}
+.app img {
+  width: 10rem;
+  height: auto;
+}
+
+.city-date-info .heading {
+  font-size: 7.5rem;
+}
+
+.weather-info {
+  display: flex;
+}
+.weather-info .temperature {
+  display: flex;
+  flex-grow: 1;
+}
+.weather-info .temperature .degree {
+  display: flex;
+  padding: 0 0.5rem;
+  font-size: 6rem;
+}
+.weather-info .temperature .degree .degree-f {
+  font-size: 3rem;
+  margin-top: 0.7rem;
+  color: gray;
+}
+.weather-info .info {
+  flex-grow: 1;
+}
+
+.day-wise-weather {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 1rem;
+}
+.day-wise-weather .days {
+  text-align: center;
+}
+.day-wise-weather .day-data {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.day-wise-weather .pollen {
+  font-size: 2rem;
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */
