@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  color: #fff;
+  background-color: #fba4a6;
+}
+
+.container {
+  padding: 2rem 8rem;
+}
+
+.navbar {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.navbar .navbar-header {
+  display: inline-block;
+}
+.navbar .navbar-header .navbar-title {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+.navbar .navbar-links {
+  display: inline;
+  float: right;
+}
+.navbar .navbar-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: #efefef;
+}
+.navbar .navbar-links a:hover {
+  color: blue;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+.home .info {
+  display: grid;
+  width: auto;
+  font-weight: bold;
+}
+.home .info .big-title {
+  display: grid;
+  font-size: 6rem;
+}
+.home .info .description {
+  display: grid;
+  font-size: 1.5rem;
+}
+.home .info .btn {
+  display: grid;
+  background-color: #c1576a;
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.home .image {
+  display: grid;
+  background-image: url("./coffee-cup-asset.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+  .navbar .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar .navbar-links a {
+    margin-left: 2rem;
+  }
+  .home {
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem 0;
+  }
+  .home .info {
+    width: 100%;
+  }
+  .home .info .big-title {
+    font-size: 5rem;
+  }
+  .home .info .description {
+    font-size: 1rem;
+  }
+  .home .info .btn {
+    font-size: 1rem;
+  }
+  .home .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./coffee-cup-asset.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    padding: 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+  .navbar .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar .navbar-links a {
+    margin-left: 1rem;
+  }
+  .home {
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem 0;
+  }
+  .home .info {
+    width: 100%;
+  }
+  .home .info .big-title {
+    font-size: 3.8rem;
+  }
+  .home .info .description {
+    font-size: 0.7rem;
+  }
+  .home .info .btn {
+    font-size: 1rem;
+  }
+  .home .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./coffee-cup-asset.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
