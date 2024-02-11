@@ -47,7 +47,7 @@ body {
           height: 56px;
           padding: 2px 0;
           margin-left: 12px;
-          .logo{
+          .logo {
             justify-self: center;
             width: 30px;
           }
@@ -70,21 +70,20 @@ body {
             list-style-type: none;
             font-size: 1.2rem;
 
-            .item{
+            .item {
               padding: 12px;
               display: flex;
               align-items: flex-end;
               .logo {
                 width: 26.25px;
               }
-              span{
+              span {
                 font-size: 20px;
                 margin-left: 20px;
               }
             }
           }
         }
-
 
         .post-btn-container {
           margin: 4px 0;
@@ -105,7 +104,7 @@ body {
         display: flex;
         justify-self: flex-end;
         margin: 12px 0;
-        .profile{
+        .profile {
           display: flex;
           align-items: center;
           padding: 12px;
@@ -116,10 +115,10 @@ body {
               border-radius: 50%;
             }
           }
-  
+
           .profile-info {
             margin: 0 12px;
-            
+
             .profile-name {
               font-size: 15px;
               font-weight: bold;
@@ -128,14 +127,13 @@ body {
               font-size: 15px;
               color: #4a4d50;
             }
-
           }
         }
-        .profile-options{
+        .profile-options {
           display: flex;
           align-items: center;
           margin-left: 40px;
-          .logo{
+          .logo {
             width: 18.75px;
             height: 18.75px;
             fill: white;
@@ -197,17 +195,17 @@ body {
       }
     }
 
-    .tweet-box{
-      .mobile-tweet-box{
+    .tweet-box {
+      .mobile-tweet-box {
         display: none;
       }
 
-      .desktop-tweet-box{
+      .desktop-tweet-box {
         padding: 4px 16px;
         border-bottom: 1px #2f3336 solid;
         .tweet-box-container {
           display: flex;
-    
+
           .profile-img {
             padding-top: 12px;
             margin-right: 12px;
@@ -216,13 +214,13 @@ body {
               border-radius: 50%;
             }
           }
-    
-          .post-input-container {
+
+          .input-container {
             display: flex;
             flex-direction: column;
             padding-top: 4px;
             width: 495px;
-    
+
             .post-text {
               height: 120px;
               .post-input {
@@ -238,7 +236,7 @@ body {
                 color: white;
               }
             }
-    
+
             .post-icons-container {
               display: flex;
               width: 500px;
@@ -247,27 +245,27 @@ body {
               .post-icons {
                 display: flex;
                 width: 428.27px;
-                .icon{
+                .icon {
                   width: 36px;
                   height: 36px;
                   .logo {
                     width: 20px;
                     margin: 0.3rem;
                   }
-                  
+
                   .location-logo {
                     opacity: 0.5;
                   }
                 }
               }
-    
+
               .post-btn-container {
                 margin-top: 8px;
                 margin-left: 12px;
                 display: flex;
                 align-items: center;
                 margin-bottom: 8px;
-    
+
                 .tweet-btn {
                   width: 67px;
                   height: 34px;
@@ -333,7 +331,7 @@ body {
               .logo {
                 width: 18.75px;
               }
-              .like-logo{
+              .like-logo {
                 width: 18.75px;
                 fill: #f91880;
               }
@@ -359,7 +357,7 @@ body {
                 width: 18.75px;
               }
             }
-            .share-icon{
+            .share-icon {
               width: 18.75px;
             }
             .last-icon {
@@ -386,7 +384,7 @@ body {
     width: 100%;
     flex-direction: column;
     .navigation-section {
-      position:initial;
+      position: initial;
       .desktop-nav-container {
         display: none;
       }
@@ -483,13 +481,13 @@ body {
         }
       }
     }
-    
+
     .container-2 {
       width: 414px;
       .header {
         display: flex;
         justify-content: space-between;
-        
+
         .profile-img {
           padding: 0.6rem 0 0 0.6rem;
           img {
@@ -497,7 +495,7 @@ body {
             border-radius: 50%;
           }
         }
-        
+
         .logo-container {
           padding: 0.6rem 0 0 0.6rem;
           .logo {
@@ -513,13 +511,13 @@ body {
           }
         }
       }
-      
+
       .top-container {
         .settings {
           display: none;
         }
       }
-      .tweet-box{
+      .tweet-box {
         .desktop-tweet-box {
           display: none;
         }
@@ -529,7 +527,7 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
-    
+
             .header-container {
               .header {
                 height: 53px;
@@ -537,7 +535,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 padding: 0 16px;
-    
+
                 .back-container {
                   height: 20px;
                   .icon {
@@ -545,11 +543,11 @@ body {
                     fill: white;
                   }
                 }
-    
+
                 .post-btn-container {
                   display: flex;
                   width: 153.11px;
-    
+
                   .draft {
                     display: flex;
                     align-items: center;
@@ -560,7 +558,7 @@ body {
                   }
                   .tweet-btn-container {
                     padding-left: 13px;
-    
+
                     .tweet-btn {
                       width: 64.56px;
                       height: 32px;
@@ -576,19 +574,19 @@ body {
                 }
               }
             }
-    
+
             .input-container {
               height: 128px;
-    
+
               .input {
                 padding: 0 16px;
                 display: flex;
                 flex-direction: column;
-    
+
                 .img-text {
                   display: flex;
                   height: 128px;
-    
+
                   .img {
                     margin-right: 12px;
                     padding-top: 12px;
@@ -599,10 +597,10 @@ body {
                   }
                   .text {
                     padding: 18px 2px 14px 2px;
-                    .post-input-container {
+                    .post-container {
                       height: 96px;
                       width: 326px;
-    
+
                       .post-input {
                         background-color: black;
                         width: 100%;
@@ -619,17 +617,17 @@ body {
                 }
               }
             }
-    
+
             .icons-container {
               display: flex;
               flex-direction: column;
               padding: 0 16px 8px 16px;
               height: 93px;
-    
+
               .reply-container {
                 height: 37px;
                 border-bottom: 1px #2f3336 solid;
-    
+
                 .reply {
                   display: flex;
                   align-items: center;
@@ -647,7 +645,7 @@ body {
                   }
                 }
               }
-    
+
               .icons {
                 display: flex;
                 align-items: center;
@@ -659,7 +657,7 @@ body {
                     margin-right: 16px;
                     margin-top: 5px;
                   }
-    
+
                   .location-logo {
                     opacity: 0.5;
                   }
@@ -669,19 +667,19 @@ body {
           }
         }
       }
-      
+
       .posts {
         width: 414px;
         .post {
           .content {
             width: 328px;
-  
+
             .post-icons {
               display: flex;
               .icon {
                 width: 65.63px;
               }
-              .share-icon{
+              .share-icon {
                 width: 18.75px;
               }
               .last-icon {
@@ -714,7 +712,6 @@ body {
     .container-3 {
       display: none;
     }
-
   }
 }
 

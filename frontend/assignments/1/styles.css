@@ -192,16 +192,16 @@ body {
   width: 40px;
   border-radius: 50%;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container {
   display: flex;
   flex-direction: column;
   padding-top: 4px;
   width: 495px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-text {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-text {
   height: 120px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-text .post-input {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-text .post-input {
   width: 100%;
   padding: 12px 0;
   background-color: black;
@@ -209,39 +209,39 @@ body {
   border: none;
   font-size: 20px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-text .post-input:focus {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-text .post-input:focus {
   outline: none;
   color: white;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container {
   display: flex;
   width: 500px;
   height: 40px;
   margin-top: 8px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-icons {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-icons {
   display: flex;
   width: 428.27px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-icons .icon {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-icons .icon {
   width: 36px;
   height: 36px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-icons .icon .logo {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-icons .icon .logo {
   width: 20px;
   margin: 0.3rem;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-icons .icon .location-logo {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-icons .icon .location-logo {
   opacity: 0.5;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-btn-container {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-btn-container {
   margin-top: 8px;
   margin-left: 12px;
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
-.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .post-input-container .post-icons-container .post-btn-container .tweet-btn {
+.container .container-2 .tweet-box .desktop-tweet-box .tweet-box-container .input-container .post-icons-container .post-btn-container .tweet-btn {
   width: 67px;
   height: 34px;
   background-color: #1d9bf0;
@@ -528,18 +528,18 @@ body {
   .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text {
     padding: 18px 2px 14px 2px;
   }
-  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-input-container {
+  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-container {
     height: 96px;
     width: 326px;
   }
-  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-input-container .post-input {
+  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-container .post-input {
     background-color: black;
     width: 100%;
     color: #45484b;
     border: none;
     font-size: 20px;
   }
-  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-input-container .post-input:focus {
+  .container .container-2 .tweet-box .mobile-tweet-box .tweet-box-container .input-container .input .img-text .text .post-container .post-input:focus {
     outline: none;
     color: white;
   }
