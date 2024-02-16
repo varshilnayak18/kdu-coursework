@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDU Stock Market </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-info">
+            KDU Stock Market Dashboard
+        </div>
+    </header>
+    <main class="main">
+        <div class="left-container">
+            <div class="stock-info">
+                <div class="logo-name">
+                    <div class="logo">
+                        <img class="image" src="" alt="logo">
+                    </div>
+                    <div class="name">
+
+                    </div>
+                </div>
+                <div class="price">
+                    Price 
+                    <div class="current-price">
+                        <span class="price-now"></span>
+                        <span class="arrow"></span>
+                        <span class="percentage"></span>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <input type="number" name="stock-quantity" id="stock-quantity" placeholder="Enter QTY">
+                </div>
+                <div class="buy">
+                    BUY
+                </div>
+                <div class="sell">
+                    SELL
+                </div>
+            </div>
+
+            <div class="graph">
+                
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="title">
+                History
+            </div>
+            <div class="orders">
+               
+            </div>
+        </div>
+    </main> 
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

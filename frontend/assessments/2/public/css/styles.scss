@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+    .header{
+        padding: 20px 10px;
+        color: white;
+        .header-info{
+            padding: 10px;
+            font-size:xx-large;
+            background-color: #1871c2;   
+        }
+    }
+
+    .main{
+        display: flex;
+        .left-container{
+            width: 75%;
+            font-size: x-large;
+            padding: 10px 15px 10px 50px;
+            .stock-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .logo-name{
+                    display: flex;
+                    border: 1px solid #000;
+                    padding: 10px;
+                    align-items: center;
+                    width: 200px;
+                    .logo{
+                        img{
+                            height: 40px;
+                            width: 40px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .price{
+                    display: flex;
+                    border: 1px solid #000;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 300px;
+                    padding: 10px;
+
+                    .current-price{
+                        color: #2f9e44;
+                        margin: 0 10px;
+                        .percentage{
+                            color: #000;
+                            font-size: large;
+                        }
+                    }
+                }
+
+                .quantity{
+                    display: flex;
+                    align-items: center;
+                    width: 200px;
+                    padding: 10px;
+                    input{
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid #000;
+                        font-size: x-large;
+                    }
+                }
+
+                .buy{
+                    display: flex;
+                    border: 1px solid #2f9e44;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90px;
+                    color: #2f9e44;
+                    background-color: #b2f2bb;
+                    padding: 10px;
+                }
+                .sell{
+                    display: flex;
+                    border: 1px solid #e03131;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90px;
+                    color: #e03131;
+                    background-color: #ffc9c9;
+                    padding: 10px;
+                }
+            }
+            .graph{
+                display: flex;
+                height: 500px;
+                border: 1px solid #000;
+                align-items: flex-end;
+
+                .bar-red{
+                    width: 20px;
+                    background-color: #ffc9c9;
+                    border: 1px solid #e03131;
+                }
+
+                .bar-green{
+                    width: 20px;
+                    background-color: #b2f2bb;
+                    border: 1px solid #2f9e44;
+                }
+            }
+        }
+        .right-container{
+            width: 25%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #000;
+            margin: 10px 15px 10px 15px;
+            max-height: 593px;
+            overflow-y: scroll;
+
+            .title{
+                font-size: x-large;
+                margin-bottom: 15px;
+            }
+
+            .orders{
+                .order{
+                    display: flex;
+                    padding: 8px;
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    justify-content: space-between;
+                    .info{
+                        .price-quantity{
+                            font-size: x-large;
+                        }
+                        .time{
+                            font-size: large;
+                        }
+                    }
+                    .type-green{
+                        font-size: larger;
+                        color: #2f9e44;
+                    }
+                    .type-red{
+                        width: 25%;
+                        font-size: larger;
+                        color: #e03131;
+                    }
+                }
+            }
+        }
+    }
+}
