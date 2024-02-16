@@ -14,16 +14,46 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
     
-    //   fetch('http://localhost:3000/history', {
-    //     method: 'GET'
-    //   })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     console.log(data);
-    //   })
-    //   .catch(error => {
-    //     console.error('Error:', error);
-    //   });
+      fetch('http://localhost:3000/history', {
+        method: 'GET'
+      })
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(element => {
+            const orderContainer = document.createElement('div');
+            orderContainer.classList.add('order');
+            const priceElement = document.querySelector('.price-now');
+            let oldPrice = parseFloat(priceElement.textContent);
+            const infoDiv = document.createElement('div');
+            infoDiv.classList.add('info');
+            const priceQuantityDiv = document.createElement('div');
+            priceQuantityDiv.classList.add('price-quantity');
+            priceQuantityDiv.textContent = element.price;
+
+            const timeDiv = document.createElement('div');
+            timeDiv.classList.add('time');
+            timeDiv.textContent = element.time;
+
+            infoDiv.appendChild(priceQuantityDiv);
+            infoDiv.appendChild(timeDiv);
+
+            const typeGreenDiv = document.createElement('div');
+            if(element.type === 'Buy'){
+                typeGreenDiv.classList.add('type-green');    
+            }
+            else{
+                typeGreenDiv.classList.add('type-red');
+            }
+            typeGreenDiv.textContent = element.type;
+
+            orderContainer.appendChild(infoDiv);
+            orderContainer.appendChild(typeGreenDiv);
+            document.querySelector('.orders').prepend(orderContainer);
+        });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
 })
 
 let count = 0;
