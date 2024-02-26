@@ -2,25 +2,43 @@ import "./Content.scss";
 import { IItem } from "../../interface";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
-import { addItem, removeItem, setItemInput } from "../../redux/ItemsListSlice";
+import {
+  addItem,
+  removeCompletedItems,
+  removeItem,
+  setItemCompleted,
+  setItemInput,
+} from "../../redux/ItemsListSlice";
 
 function Content() {
-  const itemsList = useSelector((state: RootState) => state.itemsList.itemsList)
-  const searchInput = useSelector((state: RootState) => state.searchInput.searchInput)
+  const itemsList = useSelector(
+    (state: RootState) => state.itemsList.itemsList
+  );
+  const searchInput = useSelector(
+    (state: RootState) => state.searchInput.searchInput
+  );
   const input = useSelector((state: RootState) => state.itemsList.itemInput);
 
   const reduxDispatch = useDispatch();
 
   const addItemAction = (input: IItem) => {
     reduxDispatch(addItem(input));
-  }
+  };
 
   const removeItemAction = (id: number) => {
     reduxDispatch(removeItem(id));
-  }
+  };
 
   const setInputAction = (newItem: string) => {
     reduxDispatch(setItemInput(newItem));
+  };
+
+  const removeCompletedItemsAction = () => {
+    reduxDispatch(removeCompletedItems());
+  };
+  
+  const setItemCompletedAction = (id: number) => {
+    reduxDispatch(setItemCompleted(id));
   }
 
   const addItemtoList = () => {
@@ -28,13 +46,14 @@ function Content() {
       const newItem: IItem = {
         id: itemsList.length + 1,
         text: input.trim(),
+        completed: false,
       };
 
       addItemAction(newItem);
       setInputAction("");
     }
   };
-
+  
   const searchedItems = itemsList.filter((item) =>
     item.text.toLowerCase().includes(searchInput.toLowerCase())
   );
@@ -55,13 +74,14 @@ function Content() {
         <ul className="list-items">
           {searchedItems.map((item) => (
             <li key={item.id} className="list-item">
-              {item.text}
+              <div>
+                <input onClick={() => setItemCompletedAction(item.id)} type="checkbox" checked={item.completed}></input>
+                <span className={item.completed? 'item-text-completed': 'item-text'}>{item.text}</span>
+              </div>
               <button
                 type="submit"
                 className="delete-btn"
-                onClick={() =>
-                  removeItemAction(item.id)
-                }
+                onClick={() => removeItemAction(item.id)}
               >
                 X
               </button>
@@ -74,13 +94,14 @@ function Content() {
         <ul className="list-items">
           {itemsList.map((item) => (
             <li key={item.id} className="list-item">
-              {item.text}
+              <div>
+                <input onClick={() => setItemCompletedAction(item.id)} type="checkbox" checked={item.completed}></input>
+                <span className={item.completed? 'item-text-completed': 'item-text'}>{item.text}</span>
+              </div>
               <button
                 type="submit"
                 className="delete-btn"
-                onClick={() =>
-                  removeItemAction(item.id)
-                }
+                onClick={() => removeItemAction(item.id)}
               >
                 X
               </button>
@@ -104,13 +125,25 @@ function Content() {
             onChange={(e) => setInputAction(e.target.value)}
             value={input}
           />
-          <button type="submit" className="item-submit-btn" onClick={addItemtoList}>
+          <button
+            type="submit"
+            className="item-submit-btn"
+            onClick={addItemtoList}
+          >
             Submit
           </button>
         </div>
         <div className="items-container">
           <h2 className="title">Items</h2>
           {renderItemList()}
+        </div>
+        <div className="completed-btn-container">
+          <button
+            onClick={() => removeCompletedItemsAction()}
+            className="completed-btn"
+          >
+            Clear completed
+          </button>
         </div>
       </div>
     </main>

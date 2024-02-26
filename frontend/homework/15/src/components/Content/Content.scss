@@ -61,6 +61,13 @@ main {
           border: 1px solid #e8e8e8;
           font-size: 16px;
           padding: 14px 20px;
+          .item-text{
+            margin-left: 10px;
+          }
+          .item-text-completed{
+            margin-left: 10px;
+            text-decoration: line-through;
+          }
           .delete-btn {
             border: none;
             font-size: 16px;
@@ -70,6 +77,24 @@ main {
             padding: 8px 10px;
           }
         }
+      }
+    }
+
+    .completed-btn-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      .completed-btn{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background-color: #343a40;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 15px;
+        font-size: 16px;
       }
     }
   }

@@ -7,7 +7,7 @@ interface ItemsListState {
 }
 
 const initialState: ItemsListState = {
-    itemsList: [{ id: 1, text: "Item 1" }],
+    itemsList: [{ id: 1, text: "Item 1", completed: false}],
     itemInput: ''
 }
 const itemsListSlice = createSlice({
@@ -22,9 +22,18 @@ const itemsListSlice = createSlice({
         },
         setItemInput: (state, action: PayloadAction<string>) => {
             state.itemInput = action.payload;
+        },
+        setItemCompleted: (state, action: PayloadAction<number>) => {
+            const itemToUpdate = state.itemsList.find(item => item.id === action.payload);
+            if(itemToUpdate){
+                itemToUpdate.completed = !itemToUpdate.completed;
+            }
+        },
+        removeCompletedItems: (state) => {
+            state.itemsList = state.itemsList.filter(item => !(item.completed));
         }
     }
 })
 
-export const {addItem, removeItem, setItemInput} = itemsListSlice.actions;
+export const {addItem, removeItem, setItemInput, setItemCompleted, removeCompletedItems} = itemsListSlice.actions;
 export default itemsListSlice.reducer
