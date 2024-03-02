@@ -1,0 +1,49 @@
+.header{
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+
+    .new-quote{
+        width: fit-content;
+        background-color: #FFE3CA;
+        text-align: center;
+        padding: 25px;
+        font-size: 20px;
+        color: #0C359E;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        align-items: center;
+        .loader{
+            margin-left: 5px;
+        }
+    }
+    .title{
+        margin: 25px 0;
+    }
+    .filters{
+        display: flex;
+        .filter{
+            background-color: #EE99C2; 
+            margin-bottom: 10px;
+            margin-right: 5px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .remove-btn{
+                margin-left: 20px;
+                border: none;
+                background-color: #EE99C2;
+                font-size: 15px;
+                font-weight: bold;
+                color: red;
+            }
+        }
+    }
+}
