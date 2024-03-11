@@ -1,0 +1,35 @@
+[
+    {
+      "id": "1",
+      "name": "Varshil Nayak",
+      "user_name": "varshil",
+      "user_email_id": "varshil.nayak@twitter.com",
+      "password": "password",
+      "profile_url": "images/Profile/1.png"
+    },
+    {
+      "id": "2",
+      "name": "Nitesh Gupta",
+      "user_name": "nitesh",
+      "user_email_id": "nitesh.gupta@twitter.com",
+      "password": "password",
+      "profile_url": "images/Profile/2.png"
+    },
+    {
+      "id": "3",
+      "name": "Jainam Gandhi",
+      "user_name": "jainam",
+      "user_email_id": "jainam.gandhi@twitter.com",
+      "password": "password",
+      "profile_url": "images/Profile/3.png"
+    },
+    {
+      "id": "4",
+      "name": "Kirtan Shah",
+      "user_name": "kirtan",
+      "user_email_id": "kirtan.shah@twitter.com",
+      "password": "password",
+      "profile_url": "images/Profile/4.png"
+    }
+]
+  
