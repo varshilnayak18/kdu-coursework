@@ -1,0 +1,20 @@
+.header {
+  padding: 20px;
+  padding-left: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header .name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.header .full-name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.header .qualification {
+  margin: 0;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=Header.css.map */

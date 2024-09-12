@@ -1,0 +1,23 @@
+.hobbies {
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b2f2bb;
+  border: 1px solid #f4a426;
+
+  .title {
+    color: #f08c03;
+  }
+  .list {
+    align-self: flex-start;
+  }
+
+  .list-item {
+    list-style-type: none;
+    color: #2f9e44;
+    font-size: 25px;
+  }
+}
