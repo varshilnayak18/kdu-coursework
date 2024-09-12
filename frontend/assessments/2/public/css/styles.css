@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body .header {
+  padding: 20px 10px;
+  color: white;
+}
+body .header .header-info {
+  padding: 10px;
+  font-size: xx-large;
+  background-color: #1871c2;
+}
+body .main {
+  display: flex;
+}
+body .main .left-container {
+  width: 75%;
+  font-size: x-large;
+  padding: 10px 15px 10px 50px;
+}
+body .main .left-container .stock-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+body .main .left-container .stock-info .logo-name {
+  display: flex;
+  border: 1px solid #000;
+  padding: 10px;
+  align-items: center;
+  width: 200px;
+}
+body .main .left-container .stock-info .logo-name .logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+body .main .left-container .stock-info .price {
+  display: flex;
+  border: 1px solid #000;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+}
+body .main .left-container .stock-info .price .current-price {
+  color: #2f9e44;
+  margin: 0 10px;
+}
+body .main .left-container .stock-info .price .current-price .percentage {
+  color: #000;
+  font-size: large;
+}
+body .main .left-container .stock-info .quantity {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+}
+body .main .left-container .stock-info .quantity input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000;
+  font-size: x-large;
+}
+body .main .left-container .stock-info .buy {
+  display: flex;
+  border: 1px solid #2f9e44;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  color: #2f9e44;
+  background-color: #b2f2bb;
+  padding: 10px;
+}
+body .main .left-container .stock-info .sell {
+  display: flex;
+  border: 1px solid #e03131;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  color: #e03131;
+  background-color: #ffc9c9;
+  padding: 10px;
+}
+body .main .left-container .graph {
+  display: flex;
+  height: 500px;
+  border: 1px solid #000;
+  align-items: flex-end;
+}
+body .main .left-container .graph .bar-red {
+  width: 20px;
+  background-color: #ffc9c9;
+  border: 1px solid #e03131;
+}
+body .main .left-container .graph .bar-green {
+  width: 20px;
+  background-color: #b2f2bb;
+  border: 1px solid #2f9e44;
+}
+body .main .right-container {
+  width: 25%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  margin: 10px 15px 10px 15px;
+  max-height: 593px;
+  overflow-y: scroll;
+}
+body .main .right-container .title {
+  font-size: x-large;
+  margin-bottom: 15px;
+}
+body .main .right-container .orders .order {
+  display: flex;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+body .main .right-container .orders .order .info .price-quantity {
+  font-size: x-large;
+}
+body .main .right-container .orders .order .info .time {
+  font-size: large;
+}
+body .main .right-container .orders .order .type-green {
+  font-size: larger;
+  color: #2f9e44;
+}
+body .main .right-container .orders .order .type-red {
+  width: 25%;
+  font-size: larger;
+  color: #e03131;
+}/*# sourceMappingURL=styles.css.map */
