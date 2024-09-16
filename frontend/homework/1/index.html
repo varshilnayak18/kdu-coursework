@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Hands On 1</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Header of the page-->
+    <header>
+      <div class="header-container">
+        <nav>
+          <div class="heading">
+            <img
+              src="https://i.gadgets360cdn.com/large/virat_kohli_app_1541416186955.jpg"
+              alt="logo for website"
+            />
+            <h2><em>Virat</em> Kohli</h2>
+          </div>
+          <div class="links">
+            <ul class="link-items">
+              <li><a href="#home" target="_self">Home</a></li>
+              <li><a href="#about" target="_self">About</a></li>
+              <li><a href="#rankings" target="_self">Rankings</a></li>
+              <li><a href="#contact" target="_self">Contact</a></li>
+            </ul>
+            <input
+              type="search"
+              placeholder="Search...."
+              id="search"
+              name="search"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main of the page-->
+    <main>
+      <!-- Home Section-->
+      <section id="home" class="home">
+        <div class="home-container">
+          <div>
+            Hey there! I'm Virat Kohli. Welcome to my official website! Explore
+            my <s>great</s> <u>greatest</u> journey in the sport of cricket.
+          </div>
+
+          <div>
+            Here's a quote by me from Twitter
+            <blockquote
+              cite="https://twitter.com/ImTanujSingh/status/1643117631027949571"
+            >
+              Fullfill you desires, ignite the fire, Bat through the tough
+              times, sometimes it's 263 & sometimes 49, Life can put you in a
+              pickle, Laugh through like it's a tickle, whether you get a
+              hundred or a duck, life goes on, don't get stuck
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section-->
+      <section id="about">
+        <div class="about-container">
+          <article>
+            <h3>About Me</h3>
+            <p>
+              Hello, I'm Virat Kohli, an Indian international cricketer and
+              former captain of the Indian national cricket team. Born on
+              November 5, 1988, in Delhi, India, cricket has been my passion
+              from a young age.
+            </p>
+            <p>
+              I made my debut for the Indian cricket team in August 2008, and
+              since then, it has been an incredible journey filled with
+              achievements, challenges, and memorable moments. As a right-handed
+              top-order<sub>No.3</sub> batsman, I've had the honor of leading
+              the Indian team and contributing to numerous victories across
+              formats.
+            </p>
+            <p>
+              Off the field, I'm <sup>fully</sup>dedicated to fitness, and my
+              foundation works towards various social causes. This website
+              serves as a platform to connect with my fans, share my
+              experiences, and provide insights into my cricketing journey.
+            </p>
+          </article>
+          <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank"
+            ><p>Click here to get more details</p></a
+          >
+        </div>
+      </section>
+
+      <!-- Rankings Section-->
+      <section id="rankings">
+        <div class="rankings-container">
+          <h3>Rankings across formats</h3>
+          <pre>
+                    <ol>
+                        <li>Test : 6</li>
+                        <li>ODI : 3</li>
+                        <li>T20 : 10</li>
+                    </ol>
+                </pre>
+        </div>
+      </section>
+
+      <!-- Contact Section-->
+      <section id="contact">
+        <div id="contact-container">
+          <h3>Fill in the form to contact me!</h3>
+          <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" /><br />
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br />
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" /><br />
+
+            <label for="phone">Enter your phone number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            /><br /><br />
+
+            <label for="description">Describe Yourself:</label><br />
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Your description here."
+              rows="4"
+              cols="50"
+            ></textarea>
+
+            <p>Select your Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label class="notblock" for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label class="notblock" for="Female">Female</label><br />
+            <br />
+
+            <label for="format">Choose your favourite cricket format:</label>
+            <select name="format" id="format" form="formatform">
+              <option value="test">Test</option>
+              <option value="odi">ODI</option>
+              <option value="t20">T20</option>
+            </select>
+            <br />
+
+            <p>Select the sport/s you are interested in:</p>
+            <input type="checkbox" id="sport1" name="sport1" value="Cricket" />
+            <label class="notblock" for="sport1">
+              I have interest in cricket</label
+            ><br />
+            <input type="checkbox" id="sport2" name="sport2" value="Kabaddi" />
+            <label class="notblock" for="sport2">
+              I have interest in kabaddi</label
+            ><br />
+            <input type="checkbox" id="sport3" name="sport3" value="Football" />
+            <label class="notblock" for="sport3">
+              I have interest in football</label
+            ><br />
+
+            <p>
+              Provide your average interest in selected sport/s: (in scale of 1
+              to 5)
+            </p>
+            <label class="notblock" for="interest">Interest</label>
+            <input
+              type="number"
+              id="interest"
+              name="interest"
+              min="1"
+              max="5"
+            /><br /><br />
+            <p>The HTML <code>button</code> tag is not used(Just for info)</p>
+
+            <div class="formend">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" /><br />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer of the page-->
+    <footer>
+      <div class="footer-container">
+        <aside>
+          <p>Page is for homework for KDU Frontend.</p>
+        </aside>
+        <p>
+          <b>Virat Kohli</b> | &copy; 2024 All Rights Reserved. Privacy Policy
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
