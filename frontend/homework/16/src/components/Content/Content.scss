@@ -1,0 +1,101 @@
+main {
+  width: 100%;
+  .main-container {
+    width: 75%;
+    margin: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin-top: 15px;
+
+    .input-container {
+      padding: 20px;
+      padding-bottom: 0;
+      .title {
+        margin: 0;
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+      .item-input {
+        height: 38px;
+        padding: 0;
+        border: none;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 200px;
+      }
+      .item-input:focus {
+        font-size: 16px;
+        caret-color: #343a40;
+        outline: none;
+      }
+      .item-submit-btn {
+        height: 40px;
+        background-color: #343a40;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 15px;
+        font-size: 16px;
+      }
+    }
+
+    .items-container {
+      padding: 20px;
+
+      .title {
+        margin: 0;
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+      .list-items {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+
+        .list-item {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid #e8e8e8;
+          font-size: 16px;
+          padding: 14px 20px;
+          .item-text{
+            margin-left: 10px;
+          }
+          .item-text-completed{
+            margin-left: 10px;
+            text-decoration: line-through;
+          }
+          .delete-btn {
+            border: none;
+            font-size: 16px;
+            color: white;
+            background-color: #dc3545;
+            border-radius: 5px;
+            padding: 8px 10px;
+          }
+        }
+      }
+    }
+
+    .completed-btn-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      .completed-btn{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background-color: #343a40;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 15px;
+        font-size: 16px;
+      }
+    }
+  }
+}
