@@ -2,6 +2,14 @@
   {
     "type": "BUY",
     "data": {
+      "coin": "XRP",
+      "quantity": 126359,
+      "wallet_address": "0x1397ffcfbd2badb81a0734035a957ef1"
+    }
+  },
+  {
+    "type": "BUY",
+    "data": {
       "coin": "USDC",
       "quantity": 384495,
       "wallet_address": "0x6048710a582fc9ebc9f46afd0fcda2f8"
@@ -116,7 +124,7 @@
     "type": "UPDATE_PRICE",
     "data": {
       "coin": "XRP",
-      "price": 0.69874
+      "price": 1.01
     }
   },
   {
@@ -445,17 +453,9 @@
     }
   },
   {
-    "type": "BUY",
-    "data": {
-      "coin": "XRP",
-      "quantity": 126359,
-      "wallet_address": "0x1397ffcfbd2badb81a0734035a957ef1"
-    }
-  },
-  {
     "type": "SELL",
     "data": {
-      "coin": "BSV",
+      "coin": "USDC",
       "quantity": 819,
       "wallet_address": "0x6048710a582fc9ebc9f46afd0fcda2f8"
     }
